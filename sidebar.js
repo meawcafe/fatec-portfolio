@@ -33,7 +33,7 @@ window.addEventListener('touchend', e => {
   const xDiffAbs = Math.abs(xDown - xUp);
   const sidebarToggled = document.getElementsByClassName("sidebar-nav-toggle")[0]
 
-  if (Math.max(xDiffAbs) < 120 ) {
+  if (Math.max(xDiffAbs) < 50 ) {
     return;
   }
 
