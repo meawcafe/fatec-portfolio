@@ -1,0 +1,57 @@
+#data-container main {
+  padding: 0 4rem 2rem 5rem;
+  
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#data-container main section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  padding-bottom: 1.6rem;
+  border-radius: 1rem;
+  background-color: var(--main-color0);
+}
+
+#main-title h1 {
+  text-align: center;
+  font-size: 2rem;
+  display: block;
+
+  transition: bottom 500ms ease, font-size 500ms ease;
+}
+
+#main-title {
+  margin: 2.8rem;
+  height: 0;
+  overflow: hidden;
+  padding: 2.4rem 0;
+
+  display: none;
+  
+  transition: margin 500ms ease, padding 500ms ease, height 500ms ease;
+}
+
+#main-title-desktop {
+  margin: 2.8rem;
+  height: 0;
+  overflow: hidden;
+  padding: 2.4rem 0;
+}
+
+#main-title-desktop h1 {
+  text-align: center;
+  font-size: 2rem;
+  display: block;
+}
+
+#data-container main section h2 {
+  margin-bottom: 0.8rem;
+}
+
+#data-container main section p {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+  text-align: justify;
+  user-select: text;
+}

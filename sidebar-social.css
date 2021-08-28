@@ -1,0 +1,25 @@
+#sidebar-social a {
+  background-color: transparent;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+
+  opacity:  0.6;
+  
+  transition: background-color 200ms 60ms ease;
+}
+
+#sidebar-social a:hover {
+  opacity: 1;
+}
+
+#sidebar-social a:active {
+  background-color: var(--main-rosa1);
+  transition: background-color 0ms 0ms ease;
+}
+
+#sidebar-social a img {
+  width: 100%;
+}

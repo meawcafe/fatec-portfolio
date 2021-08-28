@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>meaw: portfolio</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- local css -->
+  <link rel="stylesheet" href="root.css">
+
+
+</head>
+<body>
+
+  <div id="grid-container">
+
+    <section id="sidebar-nav">
+      <header id="section-header">
+        <h1>meawto</h1>
+        <img class="interface-control-button" src="./assets/icons/close.svg" onclick="toggleSidebar('sidebar-nav', 0)" alt="close sidebar">
+      </header>
+
+      <header class="nav-profile" onclick="window.open('https://github.com/meawto')">
+        <img src="https://avatars0.githubusercontent.com/u/44252635?s=460&u=18c398ad431d7c96cf4bcdd6d8a19f48cccaaa25&v=4" alt="meawto's avatar">
+        <div>
+          <h2>meawto</h2>
+        </div>
+      </header>
+
+      <div class="nav-content">
+        
+        <button onclick="highlight('sobre')">
+          <h2>sobre</h2>
+        </button>
+        <button onclick="
+        toggleSidebar('sidebar-nav', 0); toggleSidebar('sidebar-social', 1);">
+          <h2>contato</h2>
+        </button>
+        <button onclick="highlight('experiencia')">
+          <h2>experiência</h2>
+        </button>
+        <button onclick="highlight('conhecimentos')">
+          <h2>conhecimentos</h2>
+        </button>
+        <button onclick="window.open('https://github.com/meawto?tab=repositories')">
+          <h2>projetos</h2>
+        </button>
+      </div>
+
+      <footer><span>© Todos os direitos nao reservados</span></footer>
+    </section>
+
+    <article id="data-container">
+      <header id="section-header">
+        <img class="interface-control-button" src="./assets/icons/menu.svg" onclick="toggleSidebar('sidebar-nav', 1)" alt="open sidebar">
+        <img class="interface-control-button" src="./assets/icons/back.svg" onclick="toggleSidebar('sidebar-social', 1)" alt="open sidebar">
+      </header>
+
+      <div id="main-title">
+        <h1>portfolio do meawto</h1>
+      </div>
+
+      <main>
+
+        <div id="main-title-desktop">
+          <h1>portfolio do meawto</h1>
+        </div>
+
+        <section data-highlight="sobre">
+          <h2>sobre</h2>
+
+          <p>
+            Tenho 18 anos atualmente. Sou brasileiro e vivo no interior de São Paulo. Comecei meus estudos como desenvolvedor no final de 2018 e minha atuação como estudante de design no final de 2015. Estou estudando para melhorar cada vez mais meus conhecimentos e minhas habilidades.
+          </p>
+          
+          <p>
+            os meus estudos sérios começaram na metade de 2019, quando entrei para a <a href="https://www.etecvotuporanga.com.br/" target="_blank">escola técnica estadual</a>. Me considero muito criativo e, sempre que consigo, me dedico ao máximo nos meus estudos e projetos.
+          </p>
+
+          <p>
+            gosto muito de gatinhos, chuva, sorvete, frio, climas nublados, café e principalmente da noite. Um dos meus principais desejos é morar sozinho, conseguir me manter financeiramente e comprar carros para dirigir de madrugada ou quando houver chuva
+          </p>
+   
+        </section>
+
+        <section data-highlight="experiencia">
+          <h2>experiência</h2>
+
+          <p>
+            Completei um curso Técnico em Informática para Internet na <a href="https://www.etecvotuporanga.com.br/" target="_blank">ETEC</a>, e fui um dos melhores alunos. Também completei um estágio na secretaria da saúde na minha cidade, onde me destaquei com algorítmos que me ajudaram (e muito) nas minhas tarefas. Atualmente estou cursando Sistemas para Internet na <a href="https://www.fatecjales.edu.br/" target="_blank">FATEC</a>
+          </p>
+
+          <p>
+            Atualmente estou apenas estudando. O meu primeiro projeto sério foi o <a href="https://www.youtube.com/watch?v=8Pem6rCfct8" target="_blank">notoryu</a>, ele foi o meu TCC da <a href="https://www.etecvotuporanga.com.br/" target="_blank">ETEC</a> (ficou bonitin 👍). Atualmente estou trabalhando com meu segundo projeto sério: <a href="https://github.com/meawto/meawto.github.io" target="_blank">noto os</a>. Esses projetos sérios me fazem aprender muitas coisas novas, e eu gosto muito disso.
+          </p>
+
+        </section>
+
+        <section data-highlight="conhecimentos">
+          <h2>conhecimentos</h2>
+
+          <p>
+            <strong>Adobe</strong> (Photoshop, Premiere e After Effects);
+          </p>
+
+          <p>
+            <strong>Office</strong> (Word, Outlook, Teams e Excel);
+          </p>
+
+          <p>
+            <strong>Informática</strong> (montagem, manutenção, detecção e correção de problemas em computadores e instalação e configuração de redes e softwares);
+          </p>
+
+          <p>
+            <strong>desenvolvedor</strong> full stack;
+          </p>
+
+          <p>
+            Linguagens de desenvolvimento que estudo: <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank">html</a>, <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank">css</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">javascript</a>, <a href="https://www.php.net/" target="_blank">php</a> e <a href="https://www.python.org/" target="_blank">python</a>
+          </p>
+        </section>
+        
+      </main>
+    </article>
+
+    <section id="sidebar-social">
+      <a href="https://github.com/meawto" target="_blank">
+        <img src="./assets/icons/github.svg" alt="">
+      </a>
+      <a onclick="window.location.href = 'mailto:milton.fidelis@fatec.sp.gov.br'">
+        <img src="./assets/icons/at.svg" alt="">
+      </a>
+      <a href="http://meawto.github.io/" target="_blank">
+        <img src="./assets/icons/web.svg" alt="">
+      </a>
+    </section>
+
+  </div>
+
+  <script src="./sidebar.js"></script>
+  
+</body>
+</html>
