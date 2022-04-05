@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,53 +13,50 @@
 
   <!-- local css -->
   <link rel="stylesheet" href="root.css">
-
-
 </head>
 <body>
 
   <div id="grid-container">
-
     <section id="sidebar-nav">
       <header id="section-header">
-        <h1>meaw</h1>
-        <img class="interface-control-button" src="./assets/icons/close.svg" onclick="toggleSidebar('sidebar-nav', 0)" alt="close sidebar">
+        <span class="nav-profile-title">meaw</span>
+        <img class="interface-control-button" src="./assets/icons/close.svg" onclick="toggleSidebar('sidebar-nav', 0)" alt="Fechar barra lateral">
       </header>
 
-      <header class="nav-profile" onclick="window.open('https://github.com/meawcafe')">
-        <img src="https://avatars0.githubusercontent.com/u/44252635?s=460&u=18c398ad431d7c96cf4bcdd6d8a19f48cccaaa25&v=4" alt="meawcafe's avatar">
-        <div>
-          <h2>meaw</h2>
-        </div>
+      <header class="nav-profile">
+        <a href="https://github.com/meawcafe" target="_blank">
+          <img src="https://avatars0.githubusercontent.com/u/44252635?s=460&u=18c398ad431d7c96cf4bcdd6d8a19f48cccaaa25&v=4" alt="Foto de perfil do meaw">
+          <div>
+            <span class="nav-profile-title">meaw</span> 
+          </div>
+        </a>
       </header>
 
-      <div class="nav-content">
-        
+      <nav class="nav-content">
         <button onclick="highlight('sobre')">
-          <h2>sobre</h2>
+          sobre
         </button>
-        <button onclick="
-        toggleSidebar('sidebar-nav', 0); toggleSidebar('sidebar-social', 1);">
-          <h2>contato</h2>
+        <button onclick="toggleSidebar('sidebar-nav', 0); toggleSidebar('sidebar-social', 1);">
+          contato
         </button>
         <button onclick="highlight('experiencia')">
-          <h2>experiência</h2>
+          experiência
         </button>
         <button onclick="highlight('conhecimentos')">
-          <h2>conhecimentos</h2>
+          conhecimentos
         </button>
         <button onclick="window.open('https://github.com/meawcafe?tab=repositories')">
-          <h2>projetos</h2>
+          projetos
         </button>
-      </div>
+      </nav>
 
       <footer><span>© Todos os direitos nao reservados</span></footer>
     </section>
 
     <article id="data-container">
       <header id="section-header">
-        <img class="interface-control-button" src="./assets/icons/menu.svg" onclick="toggleSidebar('sidebar-nav', 1)" alt="open sidebar">
-        <img class="interface-control-button" src="./assets/icons/back.svg" onclick="toggleSidebar('sidebar-social', 1)" alt="open sidebar">
+        <img class="interface-control-button" src="./assets/icons/menu.svg" onclick="toggleSidebar('sidebar-nav', 1)" alt="Abrir barra lateral">
+        <img class="interface-control-button" src="./assets/icons/back.svg" onclick="toggleSidebar('sidebar-social', 1)" alt="Abrir barra lateral">
       </header>
 
       <div id="main-title">
@@ -67,14 +64,13 @@
       </div>
 
       <main>
-
         <div id="main-title-desktop">
           <h1>portfolio do meaw</h1>
         </div>
 
         <section data-highlight="sobre">
           <h2>sobre</h2>
-
+          
           <p>
             Tenho 18 anos atualmente. Sou brasileiro e vivo no interior de São Paulo. Comecei meus estudos como desenvolvedor no final de 2018 e minha atuação como estudante de design no final de 2015. Estou estudando para melhorar cada vez mais meus conhecimentos e minhas habilidades.
           </p>
@@ -125,24 +121,23 @@
             Linguagens de desenvolvimento que estudo: <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank">html</a>, <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank">css</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">javascript</a>, <a href="https://www.php.net/" target="_blank">php</a> e <a href="https://www.python.org/" target="_blank">python</a>
           </p>
         </section>
-        
       </main>
     </article>
 
     <section id="sidebar-social">
       <a href="https://github.com/meawcafe" target="_blank">
-        <img src="./assets/icons/github.svg" alt="">
+        <img src="./assets/icons/github.svg" alt="Ir para perfil de meaw no Github.">
       </a>
-      <a onclick="window.location.href = 'mailto:milton.fidelis@fatec.sp.gov.br'">
-        <img src="./assets/icons/at.svg" alt="">
+      <a href="mailto:milton.fidelis@fatec.sp.gov.br" target="_blank">
+        <img src="./assets/icons/at.svg" alt="Enviar e-mail para meaw">
       </a>
-      <a href="http://meawcafe.github.io/" target="_blank">
-        <img src="./assets/icons/web.svg" alt="">
+      <a href="http://meawto.github.io/" target="_blank">
+        <img src="./assets/icons/web.svg" alt="Ir para o site de meaw">
       </a>
     </section>
-
   </div>
 
+  <!-- local js -->
   <script src="./sidebar.js"></script>
   
 </body>

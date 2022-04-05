@@ -33,7 +33,8 @@
 }
 
 #main-title-desktop {
-  margin: 2.8rem;
+  margin: 1.2rem ;
+  margin-bottom: 2.8rem;
   height: 0;
   overflow: hidden;
   padding: 2.4rem 0;
@@ -47,6 +48,7 @@
 
 #data-container main section h2 {
   margin-bottom: 0.8rem;
+  color: var(--font-color0);
 }
 
 #data-container main section p {

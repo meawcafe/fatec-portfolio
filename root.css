@@ -1,17 +1,17 @@
 /* start imports */
 
   /* root */
-  @import url("./grid.css");
+  @import url("./components/grid.css");
 
   /* sidebar */
-  @import url("./sidebar-nav.css");
-  @import url("./sidebar-social.css");
+  @import url("./components/sidebar-nav.css");
+  @import url("./components/sidebar-social.css");
 
   /* data container */
-  @import url("./data-container.css");
+  @import url("./components/data-container.css");
 
   /* icons */
-  @import url("./icons.css");
+  @import url("./components/icons.css");
 
 /* end imports */
 
@@ -22,10 +22,6 @@
 
   --main-rosa0: rgb(255, 154, 176);
   --main-rosa1: rgb(255, 192, 205);
-
-  /* --main-color1: #F0F0F0;
-  --main-color4: #EBEBEB;
-  --main-color5: #E6E6E6;  */
   
   
   /* font config */
@@ -47,6 +43,7 @@
   border: none;
   -webkit-tap-highlight-color: transparent;
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: var(--varela-font);
 }
 
 img {
@@ -59,9 +56,8 @@ body, html {
   overflow: hidden;
 }
 
-h1, h2, p, span {
+h1, p, span {
   color: var(--font-color0);
-  font-family: var(--varela-font);
 }
 
 a {
@@ -272,6 +268,8 @@ screen and (max-height: 500px) {
     margin: 0 auto;
     width: max-content;
     border-radius: 2rem;
+
+    color: var(--font-color0);
   }
 
   .nav-content button:nth-child(2) {
