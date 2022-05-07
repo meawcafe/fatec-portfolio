@@ -7,7 +7,7 @@
   overflow: hidden;
   position: relative;
   
-  transition: background-color 500ms;
+  /* transition: background-color 500ms; */
 
   transform: scale(1.2);
   opacity: 0;
@@ -26,16 +26,16 @@
 
   /* overflow: hidden; */
 
-  padding: 1rem;
+  padding: 0.4rem;
   padding-left: 0;
 
   border-radius: 0 1.6rem 1.6rem 0;
 
-  border-left: 1rem solid var(--main-rosa0);
+  border-left: 1rem solid var(--accent-color0);
 }
 
 #sidebar-social {
-  background-color: var(--main-rosa0);
+  background-color: var(--accent-color0);
   width: 6rem;
   display: flex;
   flex-direction: column;

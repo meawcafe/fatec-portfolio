@@ -16,7 +16,7 @@
 }
 
 #sidebar-social a:active {
-  background-color: var(--main-rosa1);
+  background-color: var(--accent-color1);
   transition: background-color 0ms 0ms ease;
 }
 

@@ -57,3 +57,8 @@
   text-align: justify;
   user-select: text;
 }
+
+#data-container main section a {
+  user-select: text;
+}
+
